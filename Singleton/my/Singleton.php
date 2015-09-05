@@ -9,16 +9,14 @@ class Singleton
      */
     private static $singleton;
 
-    private function __construct()
-    {
-    }
+    private function __construct() { }
 
     /**
      * @return Singleton
      */
     public static function getInstance()
     {
-        if (!self::$singleton instanceof self) {
+        if (is_null(self::$singleton)) {
             self::$singleton = new self();
             echo 'Instance is generated.', PHP_EOL;
         }
