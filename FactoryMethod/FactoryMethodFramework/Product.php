@@ -1,6 +1,6 @@
 <?php
 
-namespace framework;
+namespace FactoryMethodFramework;
 
 abstract class Product
 {

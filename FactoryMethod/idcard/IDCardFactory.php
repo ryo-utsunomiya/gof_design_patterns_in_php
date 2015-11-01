@@ -2,7 +2,7 @@
 
 namespace idcard;
 
-use framework\Factory;
+use FactoryMethodFramework\Factory;
 
 class IDCardFactory extends Factory
 {
