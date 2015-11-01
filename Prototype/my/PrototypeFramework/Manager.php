@@ -1,6 +1,6 @@
 <?php
 
-namespace my\framework;
+namespace my\PrototypeFramework;
 
 class Manager
 {

@@ -2,7 +2,7 @@
 
 namespace my;
 
-use my\framework\Product;
+use my\PrototypeFramework\Product;
 
 class MessageBox implements Product
 {

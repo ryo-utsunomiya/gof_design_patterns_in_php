@@ -2,7 +2,7 @@
 
 namespace my;
 
-use my\framework\Manager;
+use my\PrototypeFramework\Manager;
 
 require_once __DIR__ . '/../autoload.php';
 
