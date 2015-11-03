@@ -1,8 +1,8 @@
 <?php
 
-namespace my;
+namespace Prototype\my;
 
-use my\PrototypeFramework\Product;
+use Prototype\Framework\Product;
 
 class UnderlinePen implements Product
 {

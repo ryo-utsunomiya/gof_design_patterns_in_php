@@ -1,9 +1,8 @@
 <?php
 
-namespace ListFactory;
+namespace AbstractFactory\ListFactory;
 
-use AbstractFactoryFramework\Tray;
-use AbstractFactoryFramework\Item;
+use AbstractFactory\Framework\Tray;
 
 class ListTray extends Tray
 {

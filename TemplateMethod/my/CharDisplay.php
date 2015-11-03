@@ -1,6 +1,6 @@
 <?php
 
-namespace my;
+namespace TemplateMethod\my;
 
 class CharDisplay extends AbstractDisplay
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace my;
+namespace Adapter\my;
 
 class PrintBanner extends Banner implements IPrint
 {

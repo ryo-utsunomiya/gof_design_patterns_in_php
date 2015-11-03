@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../autoload.php';
 
-$factory = new \idcard\IDCardFactory();
+$factory = new \FactoryMethod\IDCard\IDCardFactory();
 $card1 = $factory->create('Stan');
 $card2 = $factory->create('Kyle');
 $card3 = $factory->create('Cartman');

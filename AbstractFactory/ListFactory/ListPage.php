@@ -1,8 +1,8 @@
 <?php
 
-namespace ListFactory;
+namespace AbstractFactory\ListFactory;
 
-use AbstractFactoryFramework\Page;
+use AbstractFactory\Framework\Page;
 
 class ListPage extends Page
 {

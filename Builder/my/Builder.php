@@ -1,6 +1,6 @@
 <?php
 
-namespace my;
+namespace Builder\my;
 
 interface Builder
 {

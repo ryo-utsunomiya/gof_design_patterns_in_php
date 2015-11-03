@@ -1,6 +1,6 @@
 <?php
 
-namespace AbstractFactoryFramework;
+namespace AbstractFactory\Framework;
 
 abstract class Page
 {

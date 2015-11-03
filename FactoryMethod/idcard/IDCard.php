@@ -1,8 +1,8 @@
 <?php
 
-namespace idcard;
+namespace FactoryMethod\IDCard;
 
-use FactoryMethodFramework\Product;
+use FactoryMethod\Framework\Product;
 
 class IDCard extends Product
 {

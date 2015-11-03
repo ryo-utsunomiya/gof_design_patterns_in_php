@@ -1,11 +1,11 @@
 <?php
 
-namespace AbstractFactoryFramework;
+namespace AbstractFactory\Framework;
 
 require_once __DIR__ . '/../autoload.php';
 
 if (!isset($argv[1])) {
-    printf("Usage: php abstract_factory.php \\\ListFactory\\\ListFactory\n");
+    printf("Usage: php abstract_factory.php \\\AbstractFactory\\\ListFactory\\\ListFactory\n");
     exit;
 }
 

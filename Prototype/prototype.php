@@ -1,15 +1,13 @@
 <?php
 
-namespace my;
-
-use my\PrototypeFramework\Manager;
+namespace Prototype;
 
 require_once __DIR__ . '/../autoload.php';
 
-$manager = new Manager();
-$manager->register('strong message', new UnderlinePen('~'));
-$manager->register('warning box', new MessageBox('*'));
-$manager->register('slash box', new MessageBox('/'));
+$manager = new Framework\Manager();
+$manager->register('strong message', new my\UnderlinePen('~'));
+$manager->register('warning box', new my\MessageBox('*'));
+$manager->register('slash box', new my\MessageBox('/'));
 
 $manager->create('strong message')->display('Hello, World');
 $manager->create('warning box')->display('Hello, world.');

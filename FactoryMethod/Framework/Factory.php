@@ -1,6 +1,6 @@
 <?php
 
-namespace FactoryMethodFramework;
+namespace FactoryMethod\Framework;
 
 abstract class Factory
 {

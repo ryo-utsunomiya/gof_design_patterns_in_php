@@ -1,6 +1,6 @@
 <?php
 
-namespace my;
+namespace Singleton\my;
 
 require_once __DIR__ . '/../autoload.php';
 

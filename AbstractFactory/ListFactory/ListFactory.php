@@ -1,8 +1,8 @@
 <?php
 
-namespace ListFactory;
+namespace AbstractFactory\ListFactory;
 
-use AbstractFactoryFramework\Factory;
+use AbstractFactory\Framework\Factory;
 
 class ListFactory extends Factory
 {

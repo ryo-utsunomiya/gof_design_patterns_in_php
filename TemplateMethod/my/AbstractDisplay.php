@@ -1,6 +1,6 @@
 <?php
 
-namespace my;
+namespace TemplateMethod\my;
 
 abstract class AbstractDisplay
 {

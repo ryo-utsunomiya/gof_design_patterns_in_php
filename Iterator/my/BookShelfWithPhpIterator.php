@@ -1,6 +1,6 @@
 <?php
 
-namespace my;
+namespace Iterator\my;
 
 class BookShelfWithPhpIterator extends BookShelf
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ListFactory;
+namespace AbstractFactory\ListFactory;
 
-use AbstractFactoryFramework\Link;
+use AbstractFactory\Framework\Link;
 
 class ListLink extends Link
 {
