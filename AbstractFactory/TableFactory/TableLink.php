@@ -3,7 +3,6 @@
 namespace AbstractFactory\TableFactory;
 
 use AbstractFactory\Framework\Link;
-use AbstractFactory\Framework as helper;
 
 class TableLink extends Link
 {
@@ -12,6 +11,6 @@ class TableLink extends Link
      */
     public function makeHTML()
     {
-        return sprintf('<a href="%s">%s</a>' . "\n", helper\h($this->url), helper\h($this->caption));
+        return sprintf('<a href="%s">%s</a>' . "\n", self::h($this->url), self::h($this->caption));
     }
 }

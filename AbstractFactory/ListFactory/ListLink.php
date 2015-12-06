@@ -3,7 +3,6 @@
 namespace AbstractFactory\ListFactory;
 
 use AbstractFactory\Framework\Link;
-use function AbstractFactory\Framework\h;
 
 class ListLink extends Link
 {
@@ -12,6 +11,6 @@ class ListLink extends Link
      */
     public function makeHTML()
     {
-        return sprintf('<li><a href="%s">%s</a></li>'."\n", h($this->url), h($this->caption));
+        return sprintf('<li><a href="%s">%s</a></li>'."\n", self::h($this->url), self::h($this->caption));
     }
 }

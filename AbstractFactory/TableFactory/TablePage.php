@@ -4,25 +4,35 @@ namespace AbstractFactory\TableFactory;
 
 use AbstractFactory\Framework\Page;
 use AbstractFactory\Framework\Item;
-use AbstractFactory\Framework as helper;
 
 class TablePage extends Page
 {
+    /**
+     * @return string
+     */
     public function makeHTML()
     {
+        /**
+         * @param string $str
+         * @return string
+         */
+        $h = function ($str) {
+            return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+        };
+
         $html = '';
 
-        $html .= '<html><head><title>' . helper\h($this->title) . '</title></head>' . "\n";
+        $html .= '<html><head><title>' . $h($this->title) . '</title></head>' . "\n";
         $html .= '<body>' . "\n";
-        $html .= '<h1>' . helper\h($this->title) . '</h1>' . "\n";
-        $html .= '<table width="80%" border="3">'."\n";
+        $html .= '<h1>' . $h($this->title) . '</h1>' . "\n";
+        $html .= '<table width="80%" border="3">' . "\n";
 
         /** @var Item $item */
         foreach ($this->content as $item) {
-            $html .= '<tr>' . $item->makeHTML() . '</tr>' . "\n";
+            $html .= '<tr>' . $h($item->makeHTML()) . '</tr>' . "\n";
         }
 
-        $html .= '<hr><address>' . helper\h($this->author) . '</address>';
+        $html .= '<hr><address>' . $h($this->author) . '</address>';
         $html .= '</body></html>';
 
         return $html;
