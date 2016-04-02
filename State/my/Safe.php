@@ -14,8 +14,6 @@ class Safe implements Context
      */
     public function __construct($hour)
     {
-        var_dump(DayState::isDay($hour));
-
         if (DayState::isDay($hour)) {
             $this->state = DayState::getInstance();
         } else {
