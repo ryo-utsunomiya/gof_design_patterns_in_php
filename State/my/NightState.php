@@ -2,7 +2,7 @@
 
 namespace State\my;
 
-class NightState implements State
+class NightState implements StateInterface
 {
     /**
      * @var NightState
@@ -26,10 +26,10 @@ class NightState implements State
     }
 
     /**
-     * @param Context $context
-     * @param int     $hour
+     * @param ContextInterface $context
+     * @param int              $hour
      */
-    public function doClock(Context $context, $hour)
+    public function doClock(ContextInterface $context, $hour)
     {
         if (DayState::isDay($hour)) {
             $context->changeState(DayState::getInstance());

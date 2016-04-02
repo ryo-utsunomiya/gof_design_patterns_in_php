@@ -2,7 +2,7 @@
 
 namespace State\my;
 
-interface Context
+interface ContextInterface
 {
     /**
      * @param int $hour
@@ -11,8 +11,8 @@ interface Context
     public function setClock($hour);
 
     /**
-     * @param State $state
+     * @param StateInterface $state
      * @return void
      */
-    public function changeState(State $state);
+    public function changeState(StateInterface $state);
 }

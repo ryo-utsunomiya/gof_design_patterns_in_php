@@ -2,10 +2,10 @@
 
 namespace State\my;
 
-class Safe implements Context
+class Safe implements ContextInterface
 {
     /**
-     * @var State
+     * @var StateInterface
      */
     private $state;
 
@@ -40,10 +40,10 @@ class Safe implements Context
     }
 
     /**
-     * @param State $state
+     * @param StateInterface $state
      * @return void
      */
-    public function changeState(State $state)
+    public function changeState(StateInterface $state)
     {
         echo 'State is changed from ' . $this->state . ' to ' . $state . PHP_EOL;
         $this->state = $state;
