@@ -29,7 +29,6 @@ class Display
         $this->impl->rawShow();
     }
 
-
     public function close()
     {
         $this->impl->rawClose();

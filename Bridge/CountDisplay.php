@@ -14,11 +14,14 @@ class CountDisplay extends Display
         parent::__construct($impl);
     }
 
+    /**
+     * @param int $times
+     */
     public function multiDisplay($times)
     {
         $this->open();
 
-        for ($i = 0; $i < $times; $i++) {
+        for ($i = 0, $times = (int)$times; $i < $times; $i++) {
             $this->show();
         }
 
