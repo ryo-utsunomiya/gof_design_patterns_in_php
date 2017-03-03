@@ -11,7 +11,7 @@
             "": ""
         },
         "files": [
-            "Util/functions.php"
+            "lib/Util/functions.php"
         ]
     },
     "require": {}
